@@ -1,0 +1,11 @@
+------R-----
+library(tidyverse)
+# Visualization of the Perpetrator Age Group(PERP_AGE_GROUP) by districts of NYC(BORO)  - SCATTER PLOT
+viz <- ggplot(data = shootinginc, aes(x = BORO, y = PERP_AGE_GROUP)) +
+    geom_point(aes(color = PERP_AGE_GROUP),alpha = 0.5) +
+    labs(title = "DISTRIBUTION OF PERP AGE GROUP BY LOCATION",y = "Year", x = "District Location")
+> viz
+# SHOOTING INCIDENTS BY YEAR - BAR GRAPH
+> isim <- ggplot(shootinginc,aes(Year)) + geom_bar(aes(fill = Year)) +
++     labs(title = "Shooting Incidents by Year", y = "Shooting Incidents", x="Year")
+> isim
