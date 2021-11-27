@@ -5,6 +5,7 @@
  This data covers the shooting incidents between 2006 - 2020.
  
  I used Tidyverse packages of R during the Data Cleaning.
+ You can find the visualization of this work by selecting 2nd branch of this repository.
  
 The functions that I used and their explanations are above:
 
